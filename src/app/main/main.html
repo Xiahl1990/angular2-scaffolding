@@ -1,0 +1,31 @@
+<div class="main-menu">
+  <accordion [closeOthers]="oneAtATime">
+    <accordion-group isOpen = true>
+      <div accordion-heading>
+        系统管理
+        <i class="pull-right glyphicon"></i>
+      </div>
+      <ul class="col-submenus" style="top: 0;">
+        <li router-active><a [routerLink]=" ['Zcgl'] ">资产管理</a></li>
+        <li router-active><a [routerLink]=" ['Xxgl',{id:id}] ">消息管理</a></li>
+        <li router-active><a [routerLink]=" ['Zcgl'] ">用户管理</a></li>
+        <li router-active><a [routerLink]=" ['Zcgl'] ">角色管理</a></li>
+      </ul>
+    </accordion-group>
+    <accordion-group>
+      <div accordion-heading>
+        系统管理
+        <i class="pull-right glyphicon"></i>
+      </div>
+      <ul class="col-submenus" style="top: 0;">
+        <li router-active><a [routerLink]=" ['Zcgl'] ">资产管理</a></li>
+        <li router-active><a [routerLink]=" ['Xxgl',{id:id}] ">消息管理</a></li>
+        <li router-active><a [routerLink]=" ['Zcgl'] ">用户管理</a></li>
+        <li router-active><a [routerLink]=" ['Zcgl'] ">角色管理</a></li>
+      </ul>
+    </accordion-group>
+  </accordion>
+</div>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
